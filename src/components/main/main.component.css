@@ -61,7 +61,11 @@
         margin-bottom: 5px;
     }
 
+    .list li {
+        padding: 10px 0;
+    }
+
     .list li::marker {
-        content: "★ ";
+        content: "";
     }
 }
