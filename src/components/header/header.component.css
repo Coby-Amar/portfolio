@@ -1,7 +1,4 @@
 :host {
-    .cdk-focused>.mat-mdc-chip-focus-overlay {
-        background: none
-    }
 
     header {
         display: flex;
@@ -19,6 +16,7 @@
         color: black;
         font: var(--mat-sys-label-large);
         font-style: italic;
+        text-decoration: underline;
     }
 
     a {

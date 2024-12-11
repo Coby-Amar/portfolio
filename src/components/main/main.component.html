@@ -7,17 +7,25 @@
     <section class="projects">
         <h2>Projects</h2>
         @for (project of projects; track project) {
-        <article>
-            <h3>{{project.title}}</h3>
-            <img src="{{ project.img }}" alt="" />
-            <p>{{project.description}}</p>
-        </article>
+        <a href="{{project.link}}">
+            <mat-card class="project">
+                <mat-card-header>
+                    <mat-card-title>
+                        {{project.title}}
+                    </mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="{{ project.img }}" />
+                <mat-card-content>
+                    <p>{{project.description}}</p>
+                </mat-card-content>
+            </mat-card>
+        </a>
         }
     </section>
     <section>
         <h2>Experience</h2>
         @for (experience of experiences; track experience) {
-        <mat-card>
+        <mat-card appearance="outlined" class="experiences">
             <mat-card-header>
                 <mat-card-title>
                     {{experience.company}}, {{experience.location}} — {{experience.position}}
@@ -25,16 +33,28 @@
             </mat-card-header>
             <mat-card-content>
                 <p>{{experience.description}}</p>
-                <span>{{experience.startDate}}</span> — <span>{{experience.endDate}}</span>
+                <span class="dates">{{experience.startDate}} — {{experience.endDate}}</span>
+                @if (experience.content) {
                 <mat-list>
                     @for (content of experience.content; track $index) {
-                    @if (typeof content === 'string') {
-                    <mat-list-item>{{content}}</mat-list-item>
-                    } @else {
-
-                    }
+                    <mat-list-item>
+                        {{content}}
+                    </mat-list-item>
                     }
                 </mat-list>
+                }
+                @if (experience.clients) {
+                @for (client of experience.clients; track $index) {
+                <h4>{{client.name}} - {{client.position}}</h4>
+                <mat-list>
+                    @for (description of client.description; track $index) {
+                    <mat-list-item class="des">
+                        {{description}}
+                    </mat-list-item>
+                    }
+                </mat-list>
+                }
+                }
             </mat-card-content>
         </mat-card>
         }
