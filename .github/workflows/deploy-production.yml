@@ -1,0 +1,38 @@
+name: Deploy To S3
+
+on:
+  push:
+    branches:
+      - main
+
+permissions: 
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - 
+        name: Checkout
+        uses: actions/checkout@v4
+      - 
+        name: Install Node
+        uses: actions/setup-node@v4
+      - 
+        name: Install Dependences
+        run: npm install
+      - 
+        name: Build Website
+        run: ng build
+      - 
+        name: Set AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - 
+        name: Copy to S3
+        run: aws s3 sync ./dist/browser/. s3://cobyamar.click
+      - 
+        name: Create Invalidation
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/index.html"
