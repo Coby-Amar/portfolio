@@ -1,0 +1,19 @@
+:host {
+
+    main {
+        padding: 0 25px;
+
+    }
+
+    main>p {
+        font: var(--mat-sys-body-large);
+    }
+
+    h2 {
+        font: var(--mat-sys-headline-large);
+    }
+
+    h3 {
+        font: var(--mat-sys-headline-small);
+    }
+}

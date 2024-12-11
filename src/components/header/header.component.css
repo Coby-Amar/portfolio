@@ -1,0 +1,29 @@
+:host {
+    .cdk-focused>.mat-mdc-chip-focus-overlay {
+        background: none
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font: var(--mat-sys-display-small);
+        color: var(--mat-sys-primary);
+    }
+
+    span {
+        color: black;
+        font: var(--mat-sys-label-large);
+        font-style: italic;
+    }
+
+    a {
+        color: var(--mat-sys-primary);
+        text-decoration: none;
+    }
+
+}

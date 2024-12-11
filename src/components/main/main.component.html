@@ -1,0 +1,42 @@
+<main>
+    <p>
+        Versatile Software Developer with extensive experience in web, server, and mobile development. Experienced using
+        a vast range of libraries and technologies. Creative with an ability to grasp new technologies and concepts
+        quickly. Looking forward to the next challenge.
+    </p>
+    <section class="projects">
+        <h2>Projects</h2>
+        @for (project of projects; track project) {
+        <article>
+            <h3>{{project.title}}</h3>
+            <img src="{{ project.img }}" alt="" />
+            <p>{{project.description}}</p>
+        </article>
+        }
+    </section>
+    <section>
+        <h2>Experience</h2>
+        @for (experience of experiences; track experience) {
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    {{experience.company}}, {{experience.location}} — {{experience.position}}
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{experience.description}}</p>
+                <span>{{experience.startDate}}</span> — <span>{{experience.endDate}}</span>
+                <mat-list>
+                    @for (content of experience.content; track $index) {
+                    @if (typeof content === 'string') {
+                    <mat-list-item>{{content}}</mat-list-item>
+                    } @else {
+
+                    }
+                    }
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+        }
+    </section>
+</main>

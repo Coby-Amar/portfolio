@@ -1,0 +1,14 @@
+<header>
+    <h1>
+        Coby Amar
+        <span>Full-stack, Front-end, and Back-end developer</span>
+    </h1>
+
+    <mat-chip-set aria-label="links">
+        @for(link of links; track link) {
+        <mat-chip highlighted value="a">
+            <a href="{{ link.href }}">{{link.title}}</a>
+        </mat-chip>
+        }
+    </mat-chip-set>
+</header>
