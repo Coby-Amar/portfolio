@@ -14,7 +14,7 @@ export class MainComponent {
   projects = [
     {
       title: 'Bluevine banking app',
-      img: 'bluevine preview.png',
+      img: 'bluevine-preview.png',
       description: 'Created with Nativescipt and vue then re written in Flutter',
       link: 'https://apps.apple.com/us/app/bluevine/id1486393311',
     },
@@ -36,7 +36,6 @@ export class MainComponent {
       clients: [
         {
           name: 'Voge Inc',
-          position: 'Web/Mobile Developer',
           description: [
             'Revamped the internal management mobile app to Flutter and updated the website to the latest React version.',
             'Developed new internal CI/CD tools to enhance deployment efficiency and streamline the development workflow.',
@@ -44,7 +43,6 @@ export class MainComponent {
         },
         {
           name: 'Specialty Builders Inc',
-          position: 'Full-Stack Developer',
           description: [
             'Developed an internal management site and application using React, Flutter, and NodeJS.',
             'Implemented features for managing clients, employees, external contractors, and payment processes.'
@@ -75,17 +73,14 @@ export class MainComponent {
       clients: [
         {
           name: 'Eraser',
-          position: 'Mobile/Javascript Developer',
           description: ['Developed a mobile application using React Native: Integrated a Vanilla JavaScript crawler script into a WebView to automate login and manage content (e.g., deleting posts and comments) across various social media platforms such as Facebook and Instagram.'],
         },
         {
           name: 'Emersion',
-          position: 'Web Developer',
           description: ['Built a web application with React, Styled Components, Redux, and Axios for managing custom servers, including power controls and configurations, providing a service akin to AWS and Azure.'],
         },
         {
           name: 'Check Point',
-          position: 'Plugin Developer',
           description: ['Created a React Native plugin using Objective-C and Java to implement a custom fetch function with enhanced security layers tailored for specific use cases.'],
         },
       ]

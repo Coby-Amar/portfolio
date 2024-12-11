@@ -45,7 +45,7 @@
                 }
                 @if (experience.clients) {
                 @for (client of experience.clients; track $index) {
-                <h4>{{client.name}} - {{client.position}}</h4>
+                <h4>{{client.name}}</h4>
                 <mat-list>
                     @for (description of client.description; track $index) {
                     <mat-list-item class="des">
