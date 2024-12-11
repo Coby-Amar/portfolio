@@ -35,24 +35,27 @@
                 <p>{{experience.description}}</p>
                 <span class="dates">{{experience.startDate}} — {{experience.endDate}}</span>
                 @if (experience.content) {
-                <mat-list>
+                <ul class="list">
+
                     @for (content of experience.content; track $index) {
-                    <mat-list-item>
+                    <li>
                         {{content}}
-                    </mat-list-item>
+                    </li>
                     }
-                </mat-list>
+                </ul>
                 }
                 @if (experience.clients) {
                 @for (client of experience.clients; track $index) {
-                <h4>{{client.name}}</h4>
-                <mat-list>
+                <h4>
+                    {{client.name}}
+                </h4>
+                <ul class="list">
                     @for (description of client.description; track $index) {
-                    <mat-list-item class="des">
+                    <li>
                         {{description}}
-                    </mat-list-item>
+                    </li>
                     }
-                </mat-list>
+                </ul>
                 }
                 }
             </mat-card-content>

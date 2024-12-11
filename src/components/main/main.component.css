@@ -20,6 +20,7 @@
     }
 
     h4 {
+        margin-top: 10px;
         margin-bottom: 0;
         font: var(--mat-sys-label-large);
     }
@@ -55,9 +56,12 @@
         margin: 10px 0;
     }
 
-    .des>span>span {
-        white-space: wrap;
-
+    .list {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
+    .list li::marker {
+        content: "★ ";
+    }
 }
