@@ -24,6 +24,12 @@ export class MainComponent {
       description: 'Created using React, NodeJs, ExpressJS and Bootstrap',
       link: 'http://react-node.cobyamar.click',
     },
+    {
+      title: 'ST Nadlan VIP',
+      img: 'nadlanvip-preview.png',
+      description: 'Landing page created using React and Bootstrap',
+      link: 'https://nadlanvip.com',
+    }
   ]
   experiences = [
     {
