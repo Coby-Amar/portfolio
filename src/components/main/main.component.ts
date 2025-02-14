@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, contentChild } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
@@ -33,62 +33,41 @@ export class MainComponent {
   ]
   experiences = [
     {
-      company: 'Freelance',
-      location: 'Los Angeles',
+      company: 'Technology Consulting',
+      location: 'Los Angeles & Tel Aviv',
       position: 'Software Developer',
-      description: 'Self employed working with customers through word of mouth and sites like Fiverr. A few examples are described below',
       startDate: 'Jun 2022',
       endDate: 'Present',
-      clients: [
-        {
-          name: 'Voge Inc',
-          description: [
-            'Revamped the internal management mobile app to Flutter and updated the website to the latest React version.',
-            'Developed new internal CI/CD tools to enhance deployment efficiency and streamline the development workflow.',
-          ]
-        },
-        {
-          name: 'Specialty Builders Inc',
-          description: [
-            'Developed an internal management site and application using React, Flutter, and NodeJS.',
-            'Implemented features for managing clients, employees, external contractors, and payment processes.'
-          ]
-        },
+      content: [
+        "Designed and developed an internal management site and a landing page using React and Python (Django), improving team workflow by 30% through efficient user interface design and optimized data handling.",
+        "Developed new internal CI/CD tools to enhance deployment efficiency and streamline the development workflow.",
+        "Updated the website to React’s latest version, reducing development time by 40% and increasing site load speed by 30%.",
+        "Spearheaded the implementation of Flutter, increasing mobile app user satisfaction by 20%.",
       ]
     },
     {
       company: 'Bluevine',
       location: 'Tel Aviv',
       position: 'Mobile Developer',
-      description: 'Bluevine is a fintech company that builds banking solutions and services for growing businesses.',
       startDate: 'Apr 2021',
       endDate: 'Jun 2022',
       content: [
-        'Developed a banking application using NativeScript with Vue, similar in functionality to Chase\'s mobile app.',
-        'Integrated a third-party native plugin for check deposits, utilizing Java and Objective-C.',
-        'Advocated for and transitioned the app to Flutter, leading the architectural redesign and redevelopment efforts.'
+        'Developed a secure, high-performance banking application using NativeScript and Vue.js, focusing on delivering a similar experience to major banks such as Chase.',
+        'Enhanced app security by integrating third-party native plugins for secure check deposits, contributing to a 15% increase in app downloads.',
+        'Led the successful transition of the app from NativeScript to Flutter, reducing app load times by 25% and improving app performance.'
       ],
     },
     {
       company: 'Herolo',
       location: 'Tel Aviv',
       position: 'Software Developer',
-      description: 'Herolo employs a project-based model, enabling me to work on a diverse array of client projects and applications. A few examples are described below.',
       startDate: 'Apr 2018',
       endDate: 'Apr 2021',
-      clients: [
-        {
-          name: 'Eraser',
-          description: ['Developed a mobile application using React Native: Integrated a Vanilla JavaScript crawler script into a WebView to automate login and manage content (e.g., deleting posts and comments) across various social media platforms such as Facebook and Instagram.'],
-        },
-        {
-          name: 'Emersion',
-          description: ['Built a web application with React, Styled Components, Redux, and Axios for managing custom servers, including power controls and configurations, providing a service akin to AWS and Azure.'],
-        },
-        {
-          name: 'Check Point',
-          description: ['Created a React Native plugin using Objective-C and Java to implement a custom fetch function with enhanced security layers tailored for specific use cases.'],
-        },
+      content: [
+        "Developed a mobile application using React Native and JavaScript to create a web crawler for managing and deleting posts and comments on social media platforms.",
+        "Implemented a custom social media management tool that handled 1,000+ requests per day, improving user experience and increasing platform efficiency by 30%.",
+        "Designed a server management interface that streamlined operations, cutting administrative time by 35%.",
+        "Developed a React Native plugin using Objective-C and Java to implement a custom fetch function, integrating advanced security features to handle sensitive data.",
       ]
     },
   ]
