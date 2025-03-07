@@ -28,7 +28,7 @@ export class MainComponent {
       title: 'Weather App',
       img: 'react-node-weather.png',
       description: 'Created using React, NodeJs, ExpressJS and Bootstrap',
-      link: 'http://react-node.cobyamar.click',
+      link: 'https://wrn.cobyamar.org',
     },
   ]
   experiences = [
