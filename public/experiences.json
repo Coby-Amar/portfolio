@@ -1,0 +1,40 @@
+[
+    {
+        "company": "Technology Consulting",
+        "location": "Los Angeles & Tel Aviv",
+        "position": "Software Developer",
+        "startDate": "Jun 2022",
+        "endDate": "Present",
+        "content": [
+            "Designed and developed an internal management site and a landing page using React and Python (Django), improving team workflow by 30% through efficient user interface design and optimized data handling.",
+            "Developed new internal CI/CD tools to enhance deployment efficiency and streamline the development workflow.",
+            "Updated the website to React’s latest version, reducing development time by 40% and increasing site load speed by 30%.",
+            "Spearheaded the implementation of Flutter, increasing mobile app user satisfaction by 20%."
+        ]
+    },
+    {
+        "company": "Bluevine",
+        "location": "Tel Aviv",
+        "position": "Mobile Developer",
+        "startDate": "Apr 2021",
+        "endDate": "Jun 2022",
+        "content": [
+            "Developed a secure, high-performance banking application using NativeScript and Vue.js, focusing on delivering a similar experience to major banks such as Chase.",
+            "Enhanced app security by integrating third-party native plugins for secure check deposits, contributing to a 15% increase in app downloads.",
+            "Led the successful transition of the app from NativeScript to Flutter, reducing app load times by 25% and improving app performance."
+        ]
+    },
+    {
+        "company": "Herolo",
+        "location": "Tel Aviv",
+        "position": "Software Developer",
+        "startDate": "Apr 2018",
+        "endDate": "Apr 2021",
+        "content": [
+            "Developed a mobile application using React Native and JavaScript to create a web crawler for managing and deleting posts and comments on social media platforms.",
+            "Implemented a custom social media management tool that handled 1,000+ requests per day, improving user experience and increasing platform efficiency by 30%.",
+            "Designed a server management interface that streamlined operations, cutting administrative time by 35%.",
+            "Developed a React Native plugin using Objective-C and Java to implement a custom fetch function, integrating advanced security features to handle sensitive data."
+        ]
+    }
+]
