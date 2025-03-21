@@ -30,6 +30,12 @@ export class MainComponent {
       description: 'Created using React, NodeJs, ExpressJS and Bootstrap',
       link: 'https://wrn.cobyamar.org',
     },
+    {
+      title: 'Casino Jackpot',
+      img: 'nextjs-casino-slot.png',
+      description: 'Created using React, Nextsjs and Tailwindcss',
+      link: 'https://ncs.cobyamar.org',
+    },
   ]
   experiences = [
     {
