@@ -17,7 +17,7 @@ export class MainComponent {
       title: "Casino Jackpot",
       img: "nextjs-casino-slot.png",
       description: "Created using React, Nextsjs and Tailwindcss",
-      link: "https: //ncs.cobyamar.org"
+      link: "https://ncs.cobyamar.org"
     },
     {
       title: "ST Nadlan VIP",
