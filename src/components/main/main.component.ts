@@ -23,19 +23,19 @@ export class MainComponent {
       title: "ST Nadlan VIP",
       img: "nadlanvip-preview.png",
       description: "Landing page created using React and Bootstrap",
-      link: "https: //nadlanvip.com"
+      link: "https://nadlanvip.com"
     },
     {
       title: "Bluevine banking app",
       img: "bluevine-preview.png",
       description: "Created with Nativescipt and vue then re written in Flutter",
-      link: "https: //apps.apple.com/us/app/bluevine/id1486393311"
+      link: "https://apps.apple.com/us/app/bluevine/id1486393311"
     },
     {
       title: "Weather App",
       img: "react-node-weather.png",
       description: "Created using React, NodeJs, ExpressJS and Bootstrap",
-      link: "https: //wrn.cobyamar.org"
+      link: "https://wrn.cobyamar.org"
     }
   ]
   experiences: ExperienceModel[] = [
