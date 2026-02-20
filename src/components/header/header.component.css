@@ -4,12 +4,26 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
+        padding: 20px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        max-width: 100px;
+        height: auto;
+        object-fit: contain;
+        border: 1px solid transparent;
+        border-radius: 30px;
     }
 
     h1 {
         font: var(--mat-sys-display-small);
         color: var(--mat-sys-primary);
+
     }
 
     span {
@@ -23,5 +37,6 @@
         color: var(--mat-sys-primary);
         text-decoration: none;
     }
+
 
 }

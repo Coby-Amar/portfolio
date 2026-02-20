@@ -1,0 +1,25 @@
+services:
+  prod:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: prod
+    image: cobyamar/portfolio:1.0.0
+    ports: 
+      - 4200:4200
+    environment:
+      - NODE_ENV=production
+  dev:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: dev
+    ports: 
+      - 4200:4200
+    environment:
+      - NODE_ENV=development
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app
