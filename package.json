@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
-    "dev": "ng dev",
+    "dev": "ng dev --host 0.0.0.0",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",

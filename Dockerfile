@@ -1,16 +1,11 @@
-FROM node:25-alpine3.23 AS dev 
-# Set the working directory inside the container
+FROM node:24-alpine AS dev 
 WORKDIR /app
-# Copy only the dependency files first to optimize Docker caching
 COPY package.json package-lock.json* ./
-# Install dependencies using npm with caching to speed up subsequent builds
-RUN --mount=type=cache,target=/root/.npm npm install
-# Copy all application source files into the container
+RUN npm install
 COPY . .
-# Start the Angular dev server and bind it to all network interfaces
-CMD ["npm", "run", "dev", "--", "--host=0.0.0.0"]
+CMD ["npm", "run", "dev"]
 
-FROM node:25-alpine3.23 AS builder
+FROM node:24-alpine AS builder
 
 WORKDIR /app
 
@@ -22,7 +17,7 @@ COPY . .
 
 RUN npm run build --omit=dev 
 
-FROM node:25-alpine3.23 AS prod
+FROM node:24-alpine AS prod
 
 WORKDIR /app
 
